@@ -43,7 +43,7 @@ export default class NewRoomForm extends React.Component {
           onChange={this.handleAreaChange}
           value={this.state.areaValue}
         ></input>
-        <button onClick={this.handleClick}>Add Room</button>
+        <button className="btn btn-primary btn-sm" onClick={this.handleClick}>Add Room</button>
       </div>
     );
   }

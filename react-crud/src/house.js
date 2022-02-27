@@ -7,13 +7,13 @@ export default class House extends React.Component{
         ? this.props.data.rooms.map((room, index) => 
             <li key={index}>
                 {room.name} Area: {room.area}
-                <button onClick={
+                <button className="btn btn-danger btn-sm" onClick={
                     e => this.props.deleteRoom(e, this.props.data, room)
                 }>Delete</button>
             </li>)
             : null;
             return(
-                <div>
+                <div className="container justify-content:center">
                     <h1>{this.props.data.name}</h1>
                     <ul>
                         {rooms}
